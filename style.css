@@ -1,0 +1,12 @@
+
+.messages{
+	min-height: 400px;
+	max-height: 100vh;
+}
+
+@media (min-width: 768px) {
+	.messages{
+		max-height: calc(100vh - 68px)
+	}
+}
+

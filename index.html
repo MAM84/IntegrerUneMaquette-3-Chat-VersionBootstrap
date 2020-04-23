@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ducimus impedit ipsa, saepe distinctio incidunt. Ratione harum, rerum cupiditate libero sunt iusto adipisci aut laboriosam, ut inventore delectus repudiandae corporis quae illo reprehenderit vero perferendis aliquam aliquid quo pariatur doloribus tempora minus hic eveniet? Autem exercitationem distinctio sint fuga iusto.">
+	<title>Chat</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-sm navbar-light bg-info pt-2 pb-1">
+				<h1 class="navbar-brand font-weight-bold text-white"><span class="text-uppercase">dwwm2020-1</span>  <span class="text-capitalize">chat</span></h1>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="menu">
+				  	<div class="navbar-nav align-items-end align-items-sm-start">
+						<P class="nav-item nav-link text-capitalize text-white-50">john wick |</P>
+						<a class="nav-item nav-link text-capitalize text-white pl-0" href="#">logout</a>
+					</div>
+				</div>
+			  </nav>
+		</div>
+	</header>
+    <section class="chat">
+        <div class="container-fluid">
+			<div class="row">
+				<div class="channels col-lg-2">
+					<h2 class="text-capitalize font-weight-normal my-4">channels</h2>
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-action active text-capitalize"># general</a>
+						<a href="#" class="list-group-item list-group-item-action text-capitalize"># weapons</a>
+						<a href="#" class="list-group-item list-group-item-action text-capitalize"># combat</a>
+					</div>
+				</div>
+				<div class="messages col-lg-7 order-3 order-lg-2">
+					<h2 class="text-capitalize font-weight-normal my-4">messages</h2>
+					<div class="overflow-auto h-25 border border-secondary">
+						<div class="p-3">
+							<p class="text-capitalize font-weight-bold mb-0">john wick</p>
+							<p class="text-muted mb-0">Feel free to talk about anything here</p>
+							<p class="text-muted mb-0 text-right">heure date</p>
+						</div>
+						<div class="p-3">
+							<p class="text-capitalize font-weight-bold mb-0">john wick</p>
+							<p class="text-muted mb-0">Feel free to talk about anything here</p>
+							<p class="text-muted mb-0 text-right">heure date</p>
+						</div>
+						<div class="p-3">
+							<p class="text-capitalize font-weight-bold mb-0">john wick</p>
+							<p class="text-muted mb-0">Feel free to talk about anything here</p>
+							<p class="text-muted mb-0 text-right">heure date</p>
+						</div>
+						<div class="p-3">
+							<p class="text-capitalize font-weight-bold mb-0">john wick</p>
+							<p class="text-muted mb-0">Feel free to talk about anything here</p>
+							<p class="text-muted mb-0 text-right">heure date</p>
+						</div>
+						<div class="p-3">
+							<p class="text-capitalize font-weight-bold mb-0">john wick</p>
+							<p class="text-muted mb-0">Feel free to talk about anything here</p>
+							<p class="text-muted mb-0 text-right">heure date</p>
+						</div>
+					</div>
+					<form class="position-relative">
+						<div class="form-group">
+							<label for="message" class="text-muted mt-4">@john</label>
+							<textarea class="form-control" id="message" rows="7" placeholder="Enter Message"></textarea>
+						</div>
+						<div class="d-flex justify-content-end">
+							<button type="submit" class="btn btn-primary mb-lg-4">Send</button>
+						</div>
+					  </form>
+				</div>
+				<div class="members col-lg-3 mb-5 order-2 order-lg-3">
+					<h2 class="text-capitalize font-weight-normal my-4">members</h2>
+					<ul class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center text-capitalize font-weight-light">
+						  john wick
+						  <span class="badge badge-success badge-pill text-lowercase">online</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center text-capitalize font-weight-light">
+						  ethan hunt
+						  <span class="badge badge-warning badge-pill text-lowercase">offline</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center text-capitalize font-weight-light">
+						  evelyn salt
+						  <span class="badge badge-warning badge-pill text-lowercase">offline</span>
+						</li>
+					</ul>
+				</div>
+			</div>	
+        </div>	
+	</section>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
